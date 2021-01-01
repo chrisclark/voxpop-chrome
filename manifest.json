@@ -1,0 +1,13 @@
+{
+  "name": "Voxpop Auto-linker",
+  "version": "1.0",
+  "description": "Easy Voxpop links when opening Zoom meetings",
+  "permissions": ["storage", "tabs", "declarativeContent", "windows"],
+  "page_action": {},
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "manifest_version": 2
+}
