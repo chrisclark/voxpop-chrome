@@ -3,5 +3,6 @@ chrome.storage.sync.get('username', function(data) {
   ipt.value = data.username;
 });
 ipt.addEventListener('input', function(e) {
-  chrome.storage.sync.set({username: e.target.value});
+  let entry = e.target.value;
+  chrome.storage.sync.set({username: entry.replace(/\W/g, '')});
 });
